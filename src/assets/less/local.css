@@ -1,0 +1,547 @@
+/*-- -------------------------- -->
+<---      What we're fighting for          -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-1188 {
+    padding: var(--sectionPadding);
+  }
+  #services-1188 .mw-container {
+    max-width: 80rem;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-1188 .mw-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+  }
+  #services-1188 .mw-card-group {
+    /* changes to 1280px at desktop */
+    max-width: 56.25rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+  }
+  #services-1188 .mw-item {
+    list-style: none;
+    max-width: 23rem;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 1rem;
+    border: 1px solid #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+  }
+  #services-1188 .mw-picture {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1.25rem;
+    box-sizing: border-box;
+    /* prevents border from affecting height and width */
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #services-1188 .mw-icon {
+    width: 4.5rem;
+    height: auto;
+    display: block;
+  }
+  #services-1188 .mw-h3 {
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: var(--headerColor);
+    text-align: left;
+  }
+  #services-1188 .mw-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+    text-align: left;
+  }
+  #services-1188 .mw-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    font-weight: 700;
+    min-width: 9.375rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    color: #fff;
+    background-color: var(--primary);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  #services-1188 .mw-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #services-1188 .mw-button-solid:hover:before {
+    width: 100%;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-1188 .mw-card-group {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+  #services-1188 .mw-item {
+    margin: 0;
+  }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #services-1188 .mw-card-group {
+    max-width: 80rem;
+  }
+  #services-1188 .mw-item {
+    max-width: none;
+    padding: 2rem 1.5rem;
+  }
+}
+/*-- -------------------------- -->
+<---          Community Voices           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #reviews-355 {
+    padding: var(--sectionPadding);
+  }
+  #reviews-355 .mw-container {
+    width: 100%;
+    max-width: 90rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #reviews-355 .mw-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #reviews-355 .mw-card-group {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.5vw, 1.15rem);
+  }
+  #reviews-355 .mw-item {
+    list-style: none;
+    width: 100%;
+    max-width: 39.375rem;
+    margin: 0;
+    /* 24px - 32px top & bottom */
+    /* 16px - 40px left & right */
+    padding: clamp(1.5rem, 3.15vw, 2rem) clamp(1rem, 3.15vw, 2.5rem);
+    background-color: #f7f7f7;
+    border-radius: 1rem;
+    /* prevents padding from adding to height and width */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+  }
+  #reviews-355 .mw-quote {
+    width: 2.5rem;
+    height: auto;
+    margin-bottom: 2rem;
+    display: block;
+  }
+  #reviews-355 .mw-review {
+    /* 14px - 20px */
+    font-size: clamp(0.875rem, 2vw, 1.25rem);
+    line-height: 1.5em;
+    margin: 0;
+    /* 20px - 40px */
+    margin-bottom: clamp(1.25rem, 3vw, 2.5rem);
+    color: var(--bodyTextColor);
+  }
+  #reviews-355 .mw-name {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 3vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
+    margin-top: auto;
+    color: var(--headerColor);
+    display: block;
+  }
+  #reviews-355 .mw-job {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.6vw, 1rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+    display: block;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #reviews-355 .mw-card-group {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  #reviews-355 .mw-item {
+    width: clamp(31.5%, 30vw, 32.3%);
+  }
+}
+/*-- -------------------------- -->
+<---         Take Action Today           -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+  #services-218 {
+    padding: var(--sectionPadding);
+  }
+  #services-218 .mw-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-218 .mw-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 32.625rem;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #services-218 .mw-text {
+    margin-bottom: 1rem;
+  }
+  #services-218 .mw-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #services-218 .mw-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #services-218 .mw-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #services-218 .mw-button-solid:hover {
+    color: var(--primary);
+  }
+  #services-218 .mw-button-solid:hover:before {
+    width: 100%;
+  }
+  #services-218 .mw-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #services-218 .mw-item {
+    list-style: none;
+    width: 100%;
+    margin-right: 0.625rem;
+    /* padding left and right changes on tablet */
+    padding: 2.75rem 2rem;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    background-color: #fafbfc;
+    border: 1px solid #dad9e3;
+    border-radius: 0.3125rem;
+    position: relative;
+  }
+  #services-218 .mw-item:before {
+    /* top right box */
+    content: "";
+    width: 45%;
+    max-width: 11.25rem;
+    height: 50%;
+    max-height: 9rem;
+    background: var(--primary);
+    border-radius: 1rem;
+    position: absolute;
+    display: block;
+    top: -0.625rem;
+    right: -0.625rem;
+    z-index: -1;
+  }
+  #services-218 .mw-icon {
+    /* 60px - 77px */
+    width: clamp(3.75rem, 7.6vw, 4.8125rem);
+    height: auto;
+    margin-bottom: 2.5rem;
+    display: block;
+  }
+  #services-218 .mw-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 1.5vw, 1.5625rem);
+    line-height: 1.2em;
+    margin: 0;
+    margin-bottom: 1rem;
+    color: var(--headerColor);
+    font-weight: bold;
+  }
+  #services-218 .mw-item-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 48rem) {
+  #services-218 .mw-container {
+    max-width: 80rem;
+    position: relative;
+  }
+  #services-218 .mw-content {
+    width: 50%;
+  }
+  #services-218 .mw-card-group {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+  }
+  #services-218 .mw-item {
+    grid-column: span 4;
+    grid-row: span 1;
+    margin: 0;
+    /* makes each card the same height if you add or remove lines of text */
+    align-self: stretch;
+  }
+}
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RPsbs-313,
+  #RPsbsr-313 {
+    padding: var(--sectionPadding);
+  }
+  #RPsbs-313 .mw-container,
+  #RPsbsr-313 .mw-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #RPsbs-313 .mw-content,
+  #RPsbsr-313 .mw-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 33.875rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #RPsbs-313 .mw-text,
+  #RPsbsr-313 .mw-text {
+    margin-bottom: 1rem;
+  }
+  #RPsbs-313 .mw-text:last-of-type,
+  #RPsbsr-313 .mw-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #RPsbs-313 .mw-quote,
+  #RPsbsr-313 .mw-quote {
+    margin: 0 0 2rem 0;
+    /* 16px - 32px */
+    padding: clamp(1rem, 3vw, 2rem);
+    background-color: #f7f7f7;
+    border-radius: 1rem;
+    position: relative;
+  }
+  #RPsbs-313 .mw-quote-text,
+  #RPsbsr-313 .mw-quote-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0 0 1rem;
+    color: #767676;
+    display: block;
+  }
+  #RPsbs-313 .mw-name,
+  #RPsbsr-313 .mw-name {
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 0.25rem;
+    color: var(--headerColor);
+    display: block;
+  }
+  #RPsbs-313 .mw-job,
+  #RPsbsr-313 .mw-job {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    color: #767676;
+    display: block;
+  }
+  #RPsbs-313 .mw-quote-icon,
+  #RPsbsr-313 .mw-quote-icon {
+    /* 60px - 136px */
+    width: clamp(3.75rem, 10vw, 8.5rem);
+    height: auto;
+    position: absolute;
+    bottom: 0rem;
+    /* 16px - 32px */
+    right: clamp(1rem, 4vw, 2rem);
+  }
+  #RPsbs-313 .mw-image-group,
+  #RPsbsr-313 .mw-image-group {
+    /* scaling the font size with the view width */
+    font-size: min(2.31vw, .7em);
+    /* using ems so we can use font size to scale the whole section */
+    width: 39.4375em;
+    height: 39.75em;
+    position: relative;
+  }
+  #RPsbs-313 .mw-picture,
+  #RPsbsr-313 .mw-picture {
+    border-radius: 1.5em;
+    /* clips img tag corners */
+    overflow: hidden;
+    position: absolute;
+    display: block;
+  }
+  #RPsbs-313 .mw-picture img,
+  #RPsbsr-313 .mw-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act like a background image */
+    object-fit: cover;
+  }
+  #RPsbs-313 .mw-picture1,
+  #RPsbsr-313 .mw-picture1 {
+    width: 32.625em;
+    height: 36.3125em;
+    left: 0;
+    top: 0;
+  }
+  #RPsbs-313 .mw-picture2,
+  #RPsbsr-313 .mw-picture2 {
+    width: 25.875em;
+    height: 25em;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+    /* 6px - 12px */
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
+    right: 0;
+    bottom: 0;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #RPsbs-313 .mw-container,
+  #RPsbsr-313 .mw-container {
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 3.25rem;
+  }
+  #RPsbs-313 .mw-image-group,
+  #RPsbsr-313 .mw-image-group {
+    font-size: min(1.2vw, 1em);
+    flex: none;
+  }
+  #RPsbs-313 .mw-content,
+  #RPsbsr-313 .mw-content {
+    margin: 0;
+  }
+}

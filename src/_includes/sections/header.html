@@ -1,0 +1,77 @@
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="mw-navigation">
+    <div class="mw-container">
+        <!--Nav Logo-->
+        <a href="/" class="mw-logo" aria-label="NCC">
+            <img src="/assets/images/logo/NCC-logo-removebg.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async"> <h1></h1>
+        </a>
+        <!--Navigation List-->
+        <nav class="mw-nav" aria-label="main navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="mw-toggle" id="mw-toggle" aria-expanded="false" aria-controls="mw-ul-wrapper" aria-label="mobile menu toggle" aria-haspopup="menu">
+                <span class="mw-box" aria-hidden="true">
+                    <span class="mw-line mw-line1" aria-hidden="true"></span>
+                    <span class="mw-line mw-line2" aria-hidden="true"></span>
+                    <span class="mw-line mw-line3" aria-hidden="true"></span>
+                </span>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the mw-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the mw-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="mw-ul-wrapper" id="mw-ul-wrapper">
+                <ul id="mw-expanded" class="mw-ul">
+                    <li class="mw-li">
+                        <a href="/#about-ncc" class="mw-li-link {% if page.url == "/#about-ncc" %} mw-active {% endif %}" {% if page.url == "/#about-ncc" %} aria-current="page" {% endif %}>
+                            About Us
+                        </a>
+                    </li>
+                    <li class="mw-li">
+                        <a href="/#what-we-do" class="mw-li-link {% if page.url == "/#what-we-do" %} mw-active {% endif %}" {% if page.url == "/#what-we-fighting-for" %} aria-current="page" {% endif %}>
+                            Mission
+                        </a>
+                    </li>
+
+                    <li class="mw-li">
+                        <a href="/" class="mw-li-link {% if page.url == "/" %} mw-active {% endif %}" {% if page.url == "/" %} aria-current="page" {% endif %}>
+                            Update & News
+                        </a>
+                    </li>
+
+                    <!--Copy and paste this mw-dropdown list item and replace any .mw-li with this mw-dropdown group to make a new dropdown and it will work-->
+                    <!-- Note: When copying this dropdown, update the id attribute with an appropriate name (e.g., "services-dropdown-toggle", "products-dropdown-toggle") and ensure the aria-labelledby attribute on the ul matches the button's id -->
+                    <!--<li class="mw-li mw-dropdown">
+                        <button class="mw-li-link mw-dropdown-toggle {% if page.url == "/project-one/" or page.url == "/project-two/" %} mw-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="projects-dropdown-toggle">
+                            Projects
+                            <img class="mw-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
+                        </button>
+                        <ul class="mw-drop-ul" aria-labelledby="projects-dropdown-toggle">
+                            <li class="mw-drop-li">
+                                <a href="/project-one/" class="mw-li-link mw-drop-link">Project One</a>
+                            </li>
+                            <li class="mw-drop-li">
+                                <a href="/project-two/" class="mw-li-link mw-drop-link">Project Two</a>
+                            </li>
+                        </ul>
+                    </li>-->
+                    <li class="mw-li">
+                        <a href="#support" class="mw-li-link {% if page.url == "/#support/" %} mw-active {% endif %}" {% if page.url == "/support/" %} aria-current="page" {% endif %}>
+                            Support
+                        </a>
+                    </li>
+                    <li class="mw-li">
+                        <a href="/contact/" class="mw-li-link {% if page.url == "/#update-and-news/" %} mw-active {% endif %}" {% if page.url == "/#update-and-news/" %} aria-current="page" {% endif %}>
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="mw-li mw-hide-on-desktop">
+                        <a href="https://www.backabuddy.co.za/campaign/keep-ntirhisano-community-centre-alive?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnLQmucoKbGjoY_JlzVoHOxnhjPktKbI9wlTjWvhlxkyb_V5vY_2lb_5VIY54_aem_dfbhNPcD83-kObcxZ9fUjg" class="mw-li-link {% if page.url == "/contact/" %} mw-active {% endif %}" {% if page.url == "/contact/" %} aria-current="page" {% endif %} target="_blank" rel="noopener">
+                            Donate Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="https://www.backabuddy.co.za/campaign/keep-ntirhisano-community-centre-alive?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnLQmucoKbGjoY_JlzVoHOxnhjPktKbI9wlTjWvhlxkyb_V5vY_2lb_5VIY54_aem_dfbhNPcD83-kObcxZ9fUjg" class="mw-button-solid mw-nav-button"  target="_blank" rel="noopener" >Donate Now</a>
+    </div>
+</header>

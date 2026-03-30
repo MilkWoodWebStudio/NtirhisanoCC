@@ -1,0 +1,21 @@
+<!-- ============================================ -->
+<!--                Featured Posts                -->
+<!-- ============================================ -->
+
+<div id="blog-sidebar">
+    <!--Featured-->
+    <div class="mw-featured-group">
+        <span class="mw-sidebar-header">Featured Posts</span>
+        {%- for post in collections.featured | reverse -%}
+            <a class="mw-sidebar-link" href="{{ post.url }}">
+                <picture class="mw-sidebar-img">
+                    <img src="{% getUrl post.data.image | resize({ width: 120, height: 120 }) | jpeg %}" alt="{{ post.data.alt }}" width="60" height="60" loading="lazy" decoding="async">
+                </picture>
+                <div class="mw-content-group">
+                    <h3 class="mw-sidebar-title">{{ post.data.title }}</h3>
+                    <span class="mw-sidebar-date">{{ post.date | postDate }}</span>
+                </div>
+            </a>
+        {%- endfor -%}
+    </div>
+</div>
