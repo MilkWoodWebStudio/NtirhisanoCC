@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/example/public_html/
+    - export DEPLOYPATH=/home/milkwoodadmin/public_html/ncc.grassroots 
     - /bin/cp -R images $DEPLOYPATH
