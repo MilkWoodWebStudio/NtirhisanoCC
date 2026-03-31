@@ -4,4 +4,4 @@ deployment:
     - export DEPLOYPATH=/home/milkwoodadmin/public_html/ncc.grassroots/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp -R images $DEPLOYPATH
+    # - /bin/cp -R images $DEPLOYPATH
