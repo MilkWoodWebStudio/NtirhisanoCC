@@ -2,6 +2,8 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/milkwoodadmin/public_html/ntirhisano.cc
-    - /cp index.html $DEPLOYPATH
-    - /cp style.css $DEPLOYPATH
-    - /cp -R images $DEPLOYPATH
+    - npm install
+    - npm run build
+    - rm -rf "$DEPLOYPATH"/*
+    - mkdir -p "$DEPLOYPATH"
+    - cp -R public/* "$DEPLOYPATH"
